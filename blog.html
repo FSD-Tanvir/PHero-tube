@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PHero Tube</title>
+  </head>
+  <body>
+    <div class="w-4/5 mx-auto">
+      <div>
+        <h2 class="text-3xl mb-4 mt-4">
+          Discuss the scope of var, let, and const
+        </h2>
+        <p class="text-lg">
+          var has a global or function scope, leading to potential variable
+          hoisting and redeclaration issues.
+        </p>
+        <br />
+        <p class="text-lg">
+          let and const have block-level scope, limiting their accessibility to
+          the nearest enclosing block.
+        </p>
+        <br />
+        <p class="text-lg">
+          let allows variable reassignment, while const enforces immutability,
+          making it suitable for constants. These scoping rules improve code
+          predictability and maintainability.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-3xl mb-4 mt-4">
+          Tell us the use cases of null and undefined
+        </h2>
+        <h3 class="text-xl">1.Null</h3>
+        <p>
+          <li>
+            <span>Explicit Absence of Value:</span> It is used to explicitly
+            indicate the absence of a value or that a variable intentionally has
+            no value.
+          </li>
+          <li>
+            Clearing Object Properties: Developers can set an object property to
+            null to indicate that it should be considered empty or no longer in
+            use.
+          </li>
+          <li>
+            Comparison: null is often used when comparing or checking for the
+            absence of an object or value.
+          </li>
+          <li>
+            Garbage Collection: In some memory management scenarios, setting a
+            reference to null can help in releasing memory resources by
+            indicating that an object is no longer needed
+          </li>
+        </p>
+        <br />
+        <h3 class="text-xl">1.Undefined</h3>
+        <p>
+          <li>
+            Default Initial Value: When a variable is declared but not
+            initialized, it is assigned the value undefined by default.
+          </li>
+          <li>
+            Function Parameters: If a function is called with fewer arguments
+            than declared parameters, the missing parameters are set to
+            undefined.
+          </li>
+          <li>
+            Object Properties: If you try to access an object property that
+            doesn't exist, the result is undefined.
+          </li>
+          <li>
+            Return Value: Functions that don't explicitly return a value return
+            undefined
+          </li>
+        </p>
+      </div>
+      <h3 class="text-3xl mb-4 mt-4">What do you mean by REST API?</h3>
+      <p class="text-lg">
+        REST (Representational State Transfer) API, is a set of architectural
+        constraints and principles for designing networked applications. It uses
+        HTTP requests (GET, POST, PUT, DELETE) to perform CRUD (Create, Read,
+        Update, Delete) operations on resources represented as URLs. REST APIs
+        are stateless, meaning each request from a client to the server must
+        contain all the information needed to understand and process the
+        request, and they typically return responses in JSON or XML format.
+        RESTful APIs are widely used for web services and provide a scalable,
+        simple, and standardized way for different software systems to
+        communicate with each other over the internet.
+      </p>
+    </div>
+    <div class="text-center m-4">
+      <button onclick="Home()" class="btn btn-primary">Back to home</button>
+    </div>
+    <!-- js file  -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
